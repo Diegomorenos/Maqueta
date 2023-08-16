@@ -4,16 +4,17 @@
 }
 
 body{
-    margin: 10px;
     background-color: rgb(251, 241, 228);
     display: block;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
 }
 
 .logo{
@@ -21,7 +22,7 @@ header{
 }
 
 .logo:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
     transition: 1s;
 }
 
@@ -33,14 +34,16 @@ header{
 
 nav{
     background-color: rgb(98, 98, 98);
-    height: 50px;
+
+    width: 68%;
     display: block;
+    position: absolute;
+    padding: 1%;
 }
 
 .menu{
     display: flex;
-    justify-content: space-around;
-    padding: 1% 20% 1% 20%;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -58,15 +61,108 @@ nav{
     visibility: hidden;
     list-style: none;
     border-radius: 10%;
-    background-color: grey;
     padding: 3px;
     background: linear-gradient(90deg,rgb(59, 62, 59),rgb(186, 199, 166),rgb(59, 62, 59));
+    position: absolute;
+    z-index: 20;
 }
 
 .submenu li{
+    position: relative;
     margin-top: 10px;
+    z-index: 30;
 }
 
 li:hover .submenu{
     visibility: visible;
+}
+
+.estatico{
+    background-size: 100%;
+    background-image: url("../img/banner3.jpg");
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.estatico h2{
+    display: flex;
+    position: relative;
+    z-index: 10;
+    color: greenyellow;
+    font-size: 70px;
+    margin: 100px 20px 20px 20px;
+}
+
+.estatico p{
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    margin: 70px 20px 20px 20px;
+    text-align: justify;
+    color: gray;
+    font-weight: 550;
+}
+
+.contenido{
+    display: table;
+    width: 63%;
+}
+
+.entidad{
+    display: table-cell;
+    padding-top: 30px;
+}
+
+.articulo{
+    column-count: 2;
+    column-gap: 50px;
+}
+
+.articulo .imgcont{
+    width: 100%;
+}
+
+.articulo h2{
+    font-size: 30px;
+    text-align: justify;
+}
+
+.articulo p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.comentarios{
+    background-color: rgb(235, 235, 235);
+    margin-top: 30px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.comentarios article:nth-child(odd){
+    background-color: rgb(203, 204, 204);
+    border-radius: 25px;
+}
+
+.comentarios article{
+    display: flex;
+}
+
+.comentarios article div{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.comentarios p{
+    margin: 10px;
+}
+
+.comentarios article a{
+    display: block ;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
