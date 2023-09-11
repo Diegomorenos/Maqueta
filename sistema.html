@@ -28,7 +28,10 @@
 
     <!-- INICIO -->
     <section id="inicio" class="bloque">
-        <div class="contenido">
+         <div class="contenido">
+            <div>
+                <h1>Bienvenido a una experiencia placentera</h1>
+            </div>
             <div class="formulario">
                 <form action="#servicios">
                     <h2>Iniciar sesión</h2>
@@ -44,9 +47,6 @@
                         <input type="submit" value="Enviar" class="enviar">
                     </div>
                 </form>
-            </div>
-            <div>
-                <h1>Bienvenido a una experiencia placentera</h1>
             </div>
         </div>
     </section>
@@ -173,33 +173,33 @@
                 <center><h1>CREAR NUEVO USUARIO</h1></center>
                 <div class="info">
                     <label for="">Nombres</label>
-                    <input required type="text" name="" id="">
+                    <input required type="text" name="" id="nameReg">
                 </div>
                 <div class="info">
                     <label for="">Apellidos</label>
-                    <input required type="text" name="" id="">
+                    <input required type="text" name="" id="lastnameReg">
                 </div>
                 <div class="info">
                     <label for="">Email</label>
-                    <input required type="email" name="" id="">
+                    <input required type="email" name="" id="emailReg">
                 </div>
                 <div class="info">
                     <label for="">Tipo doc</label>
-                    <select name="" id="">
-                        <option value="">Cedula</option>
-                        <option value="">Pasaporte</option>
-                        <option value="">NIP</option>
+                    <select name="" id="typeID">
+                        <option value="Cedula">Cedula</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                        <option value="NIP">NIP</option>
                     </select>
                 </div>
                 <div class="info">
                     <label for="">Documento</label>
-                    <input required type="text" name="" id="">
+                    <input required type="text" name="" id="doc">
                 </div>
                 <div>
-                    <input required class="check" type="checkbox">Acepto
+                    <input required class="check" type="checkbox" id="check">Acepto terminos y condiciones
                 </div>
                 <div>
-                    <input type="submit" name="" id="" value="Enviar" class="enviar">
+                    <input type="submit" name="" id="" value="Enviar" class="enviar" onclick="registrar()">
                 </div>
             </form>
         </div>

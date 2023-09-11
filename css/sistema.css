@@ -74,6 +74,10 @@ header span{
     background-position: left bottom;
     filter: brightness(60%);
 }
+#inicio .contenido{
+    top: 10%;
+    left: 10%;
+}
 #inicio .contenido h1{
     margin: 40px;
     font-size: 40px;
@@ -147,6 +151,10 @@ header span{
 .service img:hover{
     transform: translateX(-30%);
     filter: brightness(20%);
+}
+.service .text:hover{
+    filter: brightness(20%);
+    transition: 2s;
 }
 .text{
     position: absolute;
@@ -250,6 +258,9 @@ header span{
 #contactos input, textarea{
     border-radius: 5px;
     padding: 5px;
+    max-height: 300px;
+    max-width: 300px;
+    resize: horizontal;
 }
 
 /*REGISTRO*/

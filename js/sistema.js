@@ -39,3 +39,41 @@ function contactar() {
         alert("Mensaje enviado")
     }
 }
+
+function registrar() {
+    let name = document.getElementById("nameReg")
+    let lastname = document.getElementById("lastnameReg")
+    let email = document.getElementById("emailReg")
+    let typeID = document.getElementById("typeID")
+    let doc = document.getElementById("doc")
+    let check = document.getElementById("check").checked
+    let valemail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
+
+    if (name.value=="") {
+        alert("El nombre no es valido")
+        exit()
+    }
+    if (lastname.value=="") {
+        alert("El apellido no es valido")
+        exit()
+    }
+    if (!valemail.test(email.value)) {
+        alert("El email no es valido")
+        exit()
+    }
+    if (typeID.value=="") {
+        alert("El tipo de documento no es valido")
+        exit()
+    }
+    if (doc.value.length<7) {
+        alert("El numero de documento no es valido")
+        exit()
+    }
+    if (!check) {
+        alert("Favor aceptar terminos y condiciones")
+        exit()
+    }
+    else{
+        alert("Usuario registrado con exito")
+    }
+}

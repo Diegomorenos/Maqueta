@@ -206,8 +206,9 @@ li:hover .submenu{
 }
 
 .formulario textarea{
-    width: 300px;
+    max-width: 300px;
     margin-left: 200px;
+    resize: horizontal;
 }
 
 .formulario button{

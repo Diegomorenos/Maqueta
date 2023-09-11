@@ -95,18 +95,18 @@
           <h2>Publicar un comentario</h2>
           <p>
             <label for="">Nombre</label>
-            <input type="text" placeholder="nombre" required>
+            <input type="text" placeholder="nombre" id="name" required>
           </p>
           <p>
             <label for="">Correo</label>
-            <input type="email" placeholder="correo" required>
+            <input type="email" placeholder="correo" id="email" required>
           </p>
           <p>
             <label for="">fecha</label>
-            <input type="date" required>
+            <input type="date" id="date" required>
           </p>
-          <p><textarea name="" id="" cols="" rows="10" placeholder="escriba" required></textarea></p>
-          <p><button>Publicar</button></p>
+          <p><textarea name="" id="text" cols="" rows="10" placeholder="escriba" required></textarea></p>
+          <p><button type="submit" onclick="publicar()">Publicar</button></p>
         </form>
       </section>
     </div>
@@ -151,5 +151,6 @@
     </section>
     </div>
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 </html>
