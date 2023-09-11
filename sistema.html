@@ -29,9 +29,6 @@
     <!-- INICIO -->
     <section id="inicio" class="bloque">
         <div class="contenido">
-            <div>
-                <h1>Bienvenido a una experiencia placentera</h1>
-            </div>
             <div class="formulario">
                 <form action="#servicios">
                     <h2>Iniciar sesión</h2>
@@ -47,6 +44,9 @@
                         <input type="submit" value="Enviar" class="enviar">
                     </div>
                 </form>
+            </div>
+            <div>
+                <h1>Bienvenido a una experiencia placentera</h1>
             </div>
         </div>
     </section>
@@ -100,7 +100,6 @@
     </section>
 
     <!-- CONTACTO -->
-
     <section id="contactos" class="bloque">
         <div class="contenido">
             <div class="datos">
@@ -110,7 +109,7 @@
                     </div>
                     <div class="datos_dir">
                         <h2>Direccion</h2>
-                        <h3>Calle 13 # 10 -93, Soacha, Cundinamarca</h3>
+                        <h3>Calle 13 # 10-93, Soacha/Cundinamarca</h3>
                     </div>
                 </div>
                 <div class="item">
@@ -119,7 +118,7 @@
                     </div>
                     <div class="datos_tel">
                         <h2>Telefono</h2>
-                        <h3>(57)3333333333</h3>
+                        <h3>(+57) 7007000</h3>
                     </div>
                 </div>
                 <div class="item">
@@ -128,7 +127,7 @@
                     </div>
                     <div class="datos_email">
                         <h2>Email</h2>
-                        <h3>Calle 13 # 10 -93, Soacha, Cundinamarca</h3>
+                        <h3>correo@correo.com.co</h3>
                     </div>
                 </div>
                 <div class="item">
@@ -137,31 +136,30 @@
                     </div>
                     <div class="datos_whass">
                         <h2>Whatsapp</h2>
-                        <h3>Calle 13 # 10 -93, Soacha, Cundinamarca</h3>
+                        <h3>(+57) 3003003000</h3>
                     </div>
                 </div>
             </div>
             <div class="formulario">
-                <form action="">
+                <form action="" id="contactar">
                     <h2>Enviar mensaje</h2>
                     <div class="info">
                         <label for="">Nombre</label>
-                        <input type="text" name="" id="">
+                        <input required type="text" name="" id="name">
                     </div>
                     <div class="info">
                         <label for="">Apellido</label>
-                        <input type="text" name="" id="">
+                        <input required type="text" name="" id="lastname">
                     </div>
                     <div class="info">
                         <label for="">Email</label>
-                        <input type="email" name="" id="">
+                        <input required type="email" name="" id="email">
                     </div>
                     <div class="info">
-                        <label for="">Mensaje</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea required name="" id="text" cols="35" rows="6" placeholder="Escribe tu mensaje..."></textarea>
                     </div>
-                    <div>
-                        <input type="submit" name="" id="" value="Enviar" class="btn_enviar">
+                    <div class="info">
+                        <input type="submit" name="" id="" value="Enviar" class="enviar" onclick="contactar()">
                     </div>
                 </form>
             </div>
@@ -171,32 +169,39 @@
     <!-- REGISTRARSE -->
     <section id="registro" class="bloque">
         <div class="contenido">
-            <div class="info">
-                <label for="">Nombre</label>
-                <input type="text" name="" id="">
-            </div>
-            <div class="info">
-                <label for="">Apellido</label>
-                <input type="text" name="" id="">
-            </div>
-            <div class="info">
-                <label for="">Email</label>
-                <input type="email" name="" id="">
-            </div>
-            <div class="info">
-                <label for="">Tipo doc</label>
-                <select name="" id="">
-                    <option value="">Cedula</option>
-                    <option value="">Pasaporte</option>
-                    <option value="">NIP</option>
-                </select>
-            </div>
-            <div>
-                <input type="checkbox">Acepto
-            </div>
-            <div>
-                <input type="submit" name="" id="" value="Enviar" class="btn_enviar">
-            </div>
+            <form action="#inicio">
+                <center><h1>CREAR NUEVO USUARIO</h1></center>
+                <div class="info">
+                    <label for="">Nombres</label>
+                    <input required type="text" name="" id="">
+                </div>
+                <div class="info">
+                    <label for="">Apellidos</label>
+                    <input required type="text" name="" id="">
+                </div>
+                <div class="info">
+                    <label for="">Email</label>
+                    <input required type="email" name="" id="">
+                </div>
+                <div class="info">
+                    <label for="">Tipo doc</label>
+                    <select name="" id="">
+                        <option value="">Cedula</option>
+                        <option value="">Pasaporte</option>
+                        <option value="">NIP</option>
+                    </select>
+                </div>
+                <div class="info">
+                    <label for="">Documento</label>
+                    <input required type="text" name="" id="">
+                </div>
+                <div>
+                    <input required class="check" type="checkbox">Acepto
+                </div>
+                <div>
+                    <input type="submit" name="" id="" value="Enviar" class="enviar">
+                </div>
+            </form>
         </div>
     </section>
 
